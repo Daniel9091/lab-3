@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Y</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+  </head>
+
+  <body>
+
+  <blockquote class="blockquote text-center">
+    <h1 class="display-2">Y</h1>
+  </blockquote>
+
+  <div class = "container-fluid">
+      <div class= "row p-1 bg-secondary text-white">
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p class ="h3">
+            <%= link_to "Home" , home_path, class: "text-decoration-none text-white" %>
+          </p>
+          
+        </div> 
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p class = "h3" >
+            <%= link_to "About" , about_path, class: "text-decoration-none text-white" %>
+          </p>
+          
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p class = "h3">
+          <%= link_to "Contact" , contact_path, class: "text-decoration-none text-white" %>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <%= yield %>
+    
+    <div class = "container-fluid">
+      <div class= "row p-2 fixed-bottom bg-dark text-white">
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p class ="h3">Derechos de autor:</p>
+          <p>Daniel Guzman</p>
+        </div> 
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p class = "h3">Redes sociales:</p>
+          <p>Watsapp</p>
+          <p>Instagram</p>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
